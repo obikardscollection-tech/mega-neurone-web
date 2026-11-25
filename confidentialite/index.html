@@ -20,17 +20,27 @@
 <body>
 <main>
 <h1>Politique de confidentialité de Mega Neurone</h1>
-<p class="small">Dernière mise à jour : 23 novembre 2026 · <a href="#english">English version below</a></p>
+<p class="small">Dernière mise à jour : 25 novembre 2026 · <a href="#english">English version below</a></p>
 
 <p>Cette politique explique quelles données le jeu mobile <strong>Mega Neurone</strong> (Android) utilise, pourquoi, et comment les faire supprimer.
 Le jeu est édité par <strong>obikardscollection</strong> (« nous »). Contact : <a href="mailto:meganeurone.contact@gmail.com">meganeurone.contact@gmail.com</a>.</p>
 
-<p><strong>En bref :</strong> pas de compte, pas d'adresse e-mail, pas de nom réel demandé. Ta progression reste sur ton téléphone.
+<p><strong>En bref :</strong> le compte est facultatif. Sans compte, ta progression reste sur ton téléphone et aucun nom ni e-mail n'est demandé.
+Si tu te connectes avec Google ou Facebook, ta progression est sauvegardée en ligne pour la retrouver sur un autre appareil.
 Seuls ton pseudo et tes scores partent en ligne pour le classement et le Versus. Les publicités sont fournies par Google AdMob.</p>
 
 <h2>1. Données gardées sur ton téléphone</h2>
 <p>Ton record en cm³, ton avatar, ta série de jours, tes badges, tes Cerveaux (monnaie du jeu), tes parties restantes et tes achats sont enregistrés
-<strong>uniquement sur ton appareil</strong>. Nous ne les recevons pas. Désinstaller le jeu les efface.</p>
+<strong>sur ton appareil</strong>. Sans compte, nous ne les recevons pas et désinstaller le jeu les efface.</p>
+<h2>1 bis. Compte facultatif (pseudo, Google ou Facebook)</h2>
+<p>Dans les Réglages du jeu, tu peux créer un <strong>compte avec juste un pseudo</strong> : ni e-mail ni mot de passe.
+Le jeu crée alors un compte anonyme Firebase, réserve ton pseudo (visible par les autres joueurs) et te donne un code de récupération.
+Ce code n'est pas enregistré en clair : la base garde seulement une empreinte du pseudo et du code. Garde ce code pour toi.</p>
+<p>Tu peux aussi te connecter avec ton compte <strong>Google</strong> ou <strong>Facebook</strong>. La connexion passe par
+<strong>Google Firebase Authentication</strong>, qui reçoit de Google ou Facebook : un identifiant de compte, ton nom affiché et, s'il est partagé, ton adresse e-mail.
+Le jeu ne demande que le profil public (pas tes amis, tes photos ni tes publications) et ne publie jamais rien à ta place.</p>
+<p>Avec un compte, ta progression (record, parties, série, badges, Cerveaux, pseudo) est enregistrée dans la base <strong>Firebase Realtime Database</strong> (Europe),
+lisible seulement par toi. Elle sert uniquement à la retrouver sur un autre appareil. Tes achats restent sur l'appareil (Google Play les restaure).</p>
 <p>Le bouton « Partager mon cerveau » crée une image sur ton téléphone ; elle n'est envoyée qu'à l'application que tu choisis (messagerie, réseau social...).</p>
 
 <h2>2. Classement et Versus en ligne (Google Firebase)</h2>
@@ -64,7 +74,7 @@ Les Cerveaux (monnaie du jeu) ne s'achètent pas avec de l'argent réel et n'ont
 
 <h2>5. Ce que nous ne faisons pas</h2>
 <ul>
-  <li>Pas de compte, pas d'e-mail, pas de numéro de téléphone, pas de contacts, pas de photos, pas de micro, pas de position GPS.</li>
+  <li>Pas de compte obligatoire, pas de numéro de téléphone, pas de contacts, pas de photos, pas de micro, pas de position GPS.</li>
   <li>Nous ne vendons aucune donnée.</li>
 </ul>
 
@@ -77,6 +87,9 @@ Les pseudos et scores des classements sont gardés tant que le jeu est en ligne,
 Si tu penses qu'un enfant nous a transmis des données, écris-nous et nous les supprimerons.</p>
 
 <h2>8. Tes droits et la suppression de tes données</h2>
+<p id="suppression"><strong>Supprimer ton compte :</strong> dans le jeu, ouvre les Réglages (roue dentée) puis touche « Supprimer mon compte » deux fois.
+Ton compte Firebase et ta progression en ligne sont effacés tout de suite. Tu peux aussi le demander par e-mail (voir ci-dessous) en précisant
+le nom de ton compte Google ou Facebook. Sur Facebook, tu peux en plus retirer l'accès du jeu dans Paramètres &gt; Applications et sites web.</p>
 <p>Tu peux demander l'accès, la correction ou la <strong>suppression</strong> de tes données en ligne (pseudo et scores) en écrivant à
 <a href="mailto:meganeurone.contact@gmail.com">meganeurone.contact@gmail.com</a>, en indiquant ton pseudo. Nous répondons sous 30 jours.
 Tu peux aussi changer ton pseudo à tout moment dans le jeu (écran Versus ou Classement).
@@ -88,16 +101,19 @@ Si tu habites dans l'Union européenne, tu peux aussi porter réclamation auprè
 <hr>
 <section id="english" lang="en">
 <h1>Mega Neurone – Privacy Policy</h1>
-<p class="small">Last updated: 23 November 2026</p>
+<p class="small">Last updated: 25 November 2026</p>
 <p>Mega Neurone (Android) is published by <strong>obikardscollection</strong>. Contact: <a href="mailto:meganeurone.contact@gmail.com">meganeurone.contact@gmail.com</a>.</p>
 <div class="wrap"><table>
 <tr><th>Data</th><th>Where it goes</th><th>Why</th></tr>
-<tr><td>Record, avatar, streak, badges, in-game currency, purchases owned</td><td>Stays on your device only</td><td>Game progress</td></tr>
+<tr><td>Record, avatar, streak, badges, in-game currency, purchases owned</td><td>Stays on your device (without an account)</td><td>Game progress</td></tr>
+<tr><td>Optional nickname account: anonymous account ID, reserved nickname (public), hashed recovery data</td><td>Google Firebase Authentication and Realtime Database (Europe)</td><td>Keep and recover your progress without email or password</td></tr>
+<tr><td>Optional account: Google or Facebook account ID, display name, email if shared; game progress (not purchases)</td><td>Google Firebase Authentication and Realtime Database (Europe), readable only by you</td><td>Find your progress on another device</td></tr>
 <tr><td>Nickname you choose (visible to other players), random player ID, scores, duel state</td><td>Google Firebase Realtime Database (Europe)</td><td>Leaderboards and live Versus</td></tr>
 <tr><td>Advertising ID and device identifiers, IP address (approximate location), ad interactions, diagnostics</td><td>Google AdMob SDK</td><td>Showing and measuring ads, fraud prevention</td></tr>
 <tr><td>Payment details</td><td>Google Play only (never received by us)</td><td>In-app purchases</td></tr>
 </table></div>
-<p>No account, email, contacts, photos, microphone or GPS location is used. We do not sell data. All network traffic is encrypted (HTTPS).
+<p>An account is optional. No contacts, photos, microphone or GPS location is used, and the game never posts on your behalf.
+<strong id="deletion">Delete your account:</strong> in the game, open Settings (gear) and tap "Delete my account" twice: your account and online progress are erased immediately. We do not sell data. All network traffic is encrypted (HTTPS).
 In the EEA, UK and Switzerland, Google's consent form lets you refuse personalised ads; change your choice anytime with the "Confidentialité" button in the in-game shop.
 The game is intended for users aged 13 and over. To access or delete your online data (nickname and scores), email
 <a href="mailto:meganeurone.contact@gmail.com">meganeurone.contact@gmail.com</a> with your nickname; we reply within 30 days. Uninstalling the game deletes all local data.</p>
